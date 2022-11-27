@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css"">
+      * {
+        box-sizing: border-box;
+      }
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+
+      .div1{
+        background-color:purple;
+        height:70px;
+      }
+
+      .left{
+        float:left;
+      }
+
+      .leftsmall{
+        background-color:#80dfff;
+        height:60px;
+        margin-top:10px
+      }
+
+      .right{
+        float:right;
+        background-color:#80dfff;
+        height:200px;
+        margin-top:10px;
+      }
+
+      .footer{
+        background-color:#80dfff;
+        margin-top:45%;
+        height:70px;
+      }
+      @media only screen and (max-width:700px){
+
+        .left{
+          float:none;
+          width:100%;
+        }
+
+        .leftsmall{
+          height:40px;
+        }
+
+        .right{
+          float:none;
+          width:100%;
+          margin-top:200px;
+        }
+
+        .footer{
+          margin-top:5%;
+          height:70px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="col-12 div1"></div>
+
+    <div class="col-3 left">
+      <div class="col-12 leftsmall"></div>
+      <div class="col-12 leftsmall"></div>
+      <div class="col-12 leftsmall"></div>
+    </div>
+
+<div class="col-3 right"></div>
+
+<div class="col-12 footer"></div>
+  </body>
+</html>
